@@ -12,7 +12,7 @@ ifndef ARCH_arm64_TOOLCHAIN_PREFIX
 				ARCH_arm64_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
 				FOUNDTOOL=$(shell which $(ARCH_arm64_TOOLCHAIN_PREFIX)gcc)
 				ifeq ($(FOUNDTOOL),)
-					$(error cannot find toolchain, please set ARCH_arm64_TOOLCHAIN_PREFIX or add it to your path)
+    $(error cannot find toolchain, please set ARCH_arm64_TOOLCHAIN_PREFIX or add it to your path)
 				endif
 			endif
 		endif
